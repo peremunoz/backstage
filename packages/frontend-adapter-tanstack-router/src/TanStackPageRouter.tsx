@@ -24,14 +24,20 @@ import {
   type ReactNode,
 } from 'react';
 import {
-  appHistoryApiRef,
-  NavigationProvider,
-  type Navigation,
   useApi,
   useApiHolder,
-  useRouteResolution,
+  appHistoryApiRef,
 } from '@backstage/frontend-plugin-api';
-import { isExternalTarget, sanitizeHref } from '@internal/frontend';
+import {
+  useRouteMatches,
+  isExternalTarget,
+  sanitizeHref,
+} from '@internal/frontend';
+import {
+  RoutingProvider,
+  type RoutingIntegration,
+} from '@backstage/frontend-plugin-api/routing';
+
 import type { RouterHistory } from '@tanstack/history';
 import {
   Outlet,
@@ -47,7 +53,7 @@ import {
 import { createTanStackHistory } from './createTanStackHistory';
 
 /** Resolves authored targets using the same route scope as a native TanStack Link. */
-function useAdapterNavigation(): Navigation {
+function useAdapterNavigation(): RoutingIntegration {
   const history = useApi(appHistoryApiRef);
   const router = useRouter();
   const from = useMatch({
@@ -143,7 +149,7 @@ export function createTanStackPageRouter(
   options: CreateTanStackPageRouterOptions,
 ): ComponentType<{ children?: ReactNode }> {
   return function TanStackPageRouterAdapter(props: { children?: ReactNode }) {
-    const mount = useRouteResolution().matches.at(-1);
+    const mount = useRouteMatches().at(-1);
     const routePattern = mount?.routePattern;
     const appHistory = useApiHolder().get(appHistoryApiRef);
     const scoped = useMemo(() => {
@@ -222,9 +228,9 @@ export function createTanStackPageRouter(
 
     return (
       <PageContentContext.Provider value={props.children}>
-        <NavigationProvider useNavigation={useAdapterNavigation}>
+        <RoutingProvider useRoutingIntegration={useAdapterNavigation}>
           <RouterProvider router={scoped.router} />
-        </NavigationProvider>
+        </RoutingProvider>
       </PageContentContext.Provider>
     );
   };

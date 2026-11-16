@@ -18,13 +18,14 @@ import { act, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { renderTestApp } from '@backstage/frontend-test-utils';
 import {
+  appHistoryApiRef,
   createRouteRef,
   PageBlueprint,
   useRouteRef,
-  useNavigation,
   useAppNavigate,
   RouterLink,
 } from '@backstage/frontend-plugin-api';
+import { useRoutingIntegration } from '@backstage/frontend-plugin-api/routing';
 
 import {
   Outlet,
@@ -39,7 +40,7 @@ it('binds neutral anchors and collection navigation to nested routes', async () 
   const otherRef = createRouteRef();
   function Controls() {
     const other = useRouteRef(otherRef)!();
-    const navigation = useNavigation();
+    const navigation = useRoutingIntegration();
     const strictNavigate = useAppNavigate();
     const activate = () =>
       navigation.navigate('../sibling', { state: { source: 'collection' } });
@@ -131,7 +132,7 @@ it('binds neutral anchors and collection navigation to nested routes', async () 
       loader: async () => <div>Other page</div>,
     },
   });
-  const { appHistory } = renderTestApp({
+  const { apis } = renderTestApp({
     extensions: [page, other],
     initialRouteEntries: ['/tools/alpha/section/item'],
     config: {
@@ -139,6 +140,7 @@ it('binds neutral anchors and collection navigation to nested routes', async () 
       backend: { baseUrl: 'http://localhost:7007' },
     },
   });
+  const appHistory = apis.get(appHistoryApiRef)!;
   expect(
     await screen.findByRole('link', { name: 'Relative anchor' }),
   ).toHaveAttribute('href', '/base/tools/alpha/section/sibling');

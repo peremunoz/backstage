@@ -26,7 +26,8 @@ Missing utility API dependencies fail promptly even when a sibling dependency
 is still initializing.
 
 `useApiHolder` adapts legacy context holders for async lookups while forwarding
-synchronous lookups unchanged.
+synchronous lookups unchanged. Native async app holders are returned unchanged,
+so test render helpers and components share the same holder instance.
 
 `useApi` also supports older synchronous refs when their registered implementation
 has migrated to async loading. Existing synchronous factories remain compatible

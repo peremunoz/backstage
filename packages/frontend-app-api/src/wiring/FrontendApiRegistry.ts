@@ -23,6 +23,8 @@ import {
   ApiRef,
 } from '@backstage/frontend-plugin-api';
 
+import { apiHolderSupportsAsync, createApiPromise } from '@internal/frontend';
+
 export class FrontendApiRegistry {
   private readonly factories = new Map<string, AnyApiFactory>();
 
@@ -79,6 +81,7 @@ export class FrontendApiRegistry {
 }
 
 export class FrontendApiResolver implements ApiHolder {
+  readonly [apiHolderSupportsAsync] = true;
   private readonly apis = new Map<string, unknown>();
   private readonly asyncApis = new Map<string, Promise<unknown>>();
   private readonly primaryRegistry?: FrontendApiRegistry;
@@ -155,7 +158,13 @@ export class FrontendApiResolver implements ApiHolder {
         api = this.apis.get(ref.id);
       } else {
         if (!factory) {
-          return this.fallbackApis?.get(ref);
+          const fallback = this.fallbackApis?.get(ref);
+          if (ref.loading !== 'async' || fallback === undefined) {
+            return fallback;
+          }
+          const promise = createApiPromise(fallback) as Promise<T>;
+          this.asyncApis.set(ref.id, promise);
+          return promise;
         }
 
         const isAsyncFactory = factory.api.loading === 'async';

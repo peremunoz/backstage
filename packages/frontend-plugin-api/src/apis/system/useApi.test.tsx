@@ -156,6 +156,7 @@ describe('useApiHolder', () => {
     const resolver = new FrontendApiResolver({ primaryRegistry: registry });
     context.set({ 1: resolver });
     const holder = renderHook(() => useApiHolder()).result.current;
+    expect(holder).toBe(resolver);
     const promise = resolver.get(ref);
     expect(holder.get(ref)).toBe(promise);
     await expect(promise).resolves.toEqual({ value: 'native instance' });

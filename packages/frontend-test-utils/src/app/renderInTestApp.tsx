@@ -221,8 +221,8 @@ const testAppPlugin = createTestAppPlugin([
  * custom fallback. The Suspense boundary does not catch rendering errors.
  *
  * Navigation is owned by a {@link @backstage/frontend-plugin-api#AppHistoryApi}
- * with in-memory history, the same seam as production, and is returned as
- * `appHistory`.
+ * with in-memory history, the same seam as production. Access it through
+ * `apis.get(appHistoryApiRef)` on the render result.
  *
  * The element renders under the app's root React Router v6 projection, as in
  * production. Use `router` for the page's explicit adapter. Framework routing
@@ -317,7 +317,7 @@ export function renderInTestApp<const TApiPairs extends any[] = any[]>(
     }),
   ];
 
-  const { appHistory, features, apiFactoryOverrides, externalBindings } =
+  const { features, apiFactoryOverrides, externalBindings } =
     prepareTestAppFeatures({
       extensions,
       appHistory: defaultAppHistory,
@@ -378,5 +378,5 @@ export function renderInTestApp<const TApiPairs extends any[] = any[]>(
     app.tree.root.instance!.getData(coreExtensionData.reactElement),
   );
 
-  return Object.assign(result, { appHistory });
+  return Object.assign(result, { apis: app.apis });
 }

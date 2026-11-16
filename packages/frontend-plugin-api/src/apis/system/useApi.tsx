@@ -18,6 +18,7 @@ import { AnyApiRef, ApiHolder, ApiRef, ApiLookupResult } from './types';
 import { useVersionedContext } from '@backstage/version-bridge';
 import { NotImplementedError } from '@backstage/errors';
 import {
+  apiHolderSupportsAsync,
   resolvedApiPromise,
   type ResolvedApiPromise,
   createApiPromise,
@@ -34,7 +35,10 @@ type ApiPromiseState =
 const apiPromiseStates = new WeakMap<Promise<unknown>, ApiPromiseState>();
 
 // The v1 context is also provided by the legacy system, whose lookups are synchronous.
-type ApiHolderV1 = { get(ref: AnyApiRef): unknown };
+type ApiHolderV1 = {
+  get(ref: AnyApiRef): unknown;
+  readonly [apiHolderSupportsAsync]?: true;
+};
 const apiHolderAdapters = new WeakMap<ApiHolderV1, ApiHolder>();
 
 function adaptApiHolder(holder: ApiHolderV1): ApiHolder {
@@ -86,7 +90,8 @@ function adaptApiHolder(holder: ApiHolderV1): ApiHolder {
 /**
  * React hook for retrieving {@link ApiHolder}, an API catalog.
  * Async lookups are normalized when the context contains a legacy holder.
- * Synchronous lookups are forwarded unchanged.
+ * Synchronous lookups are forwarded unchanged. Native async holders are returned
+ * unchanged.
  *
  * @public
  */
@@ -101,6 +106,9 @@ export function useApiHolder(): ApiHolder {
   const apiHolder = versionedHolder.atVersion(1);
   if (!apiHolder) {
     throw new NotImplementedError('ApiContext v1 not available');
+  }
+  if (apiHolder[apiHolderSupportsAsync]) {
+    return apiHolder as ApiHolder;
   }
   let adapter = apiHolderAdapters.get(apiHolder);
   if (!adapter) {

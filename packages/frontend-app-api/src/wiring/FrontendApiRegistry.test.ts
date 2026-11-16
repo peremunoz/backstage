@@ -319,6 +319,32 @@ describe('FrontendApiResolver', () => {
     expect(fallback.get(api)).toBe(newResult);
   });
 
+  it('should normalize legacy fallback values for async access', async () => {
+    const syncRef = createApiRef<string>().with({ id: 'fallback' });
+    const asyncRef = createApiRef<string>().with({
+      id: 'fallback',
+      loading: 'async',
+    });
+    let value: string | undefined = 'first';
+    // Model the synchronous lookup contract of a legacy fallback holder.
+    const get = jest.fn().mockImplementation(() => value);
+    const resolver = new FrontendApiResolver({ fallbackApis: { get } });
+
+    expect(resolver.get(syncRef)).toBe('first');
+    const first = resolver.get(asyncRef);
+    await expect(first).resolves.toBe('first');
+    expect(resolver.get(asyncRef)).toBe(first);
+    value = 'second';
+    resolver.invalidate([asyncRef.id]);
+    const second = resolver.get(asyncRef);
+    expect(second).not.toBe(first);
+    await expect(second).resolves.toBe('second');
+    value = undefined;
+    resolver.invalidate();
+    expect(resolver.get(asyncRef)).toBeUndefined();
+    expect(resolver.isMaterialized(asyncRef.id)).toBe(false);
+  });
+
   it('should cache falsy API values', () => {
     const falseApiRef = createApiRef<boolean>({ id: 'test.false' });
     const falseFactoryFn = jest.fn(() => false);
