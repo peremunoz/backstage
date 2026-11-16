@@ -1590,11 +1590,7 @@ export const fetchApiRef: {
 };
 
 // @public (undocumented)
-export type FrontendFeature =
-  | (Omit<FrontendPlugin, 'pluginId'> & {
-      pluginId?: string;
-    })
-  | FrontendModule;
+export type FrontendFeature = FrontendPlugin | FrontendModule;
 
 // @public (undocumented)
 export interface FrontendFeatureLoader {
