@@ -14,11 +14,13 @@
  * limitations under the License.
  */
 
-import { AnyApiFactory, ApiFactory } from '../apis/system';
+import { ApiFactory } from '../apis/system';
 import { createExtensionBlueprint, createExtensionDataRef } from '../wiring';
 import { createExtensionBlueprintParams } from '../wiring/createExtensionBlueprint';
 
-const factoryDataRef = createExtensionDataRef<AnyApiFactory>().with({
+const factoryDataRef = createExtensionDataRef<
+  ApiFactory<unknown, unknown, Record<string, unknown>, 'sync' | 'async'>
+>().with({
   id: 'core.api.factory',
 });
 
@@ -41,7 +43,7 @@ export const ApiBlueprint = createExtensionBlueprint({
     TLoading extends 'sync' | 'async' = 'sync',
   >(
     params: ApiFactory<TApi, TImpl, TDeps, TLoading>,
-  ) => createExtensionBlueprintParams(params as AnyApiFactory),
+  ) => createExtensionBlueprintParams(params as typeof factoryDataRef.T),
   *factory(params) {
     yield factoryDataRef(params);
   },

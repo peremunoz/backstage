@@ -18,11 +18,12 @@
  * API reference. Set `loading: 'async'` when creating a ref to allow asynchronous
  * factories and dependencies. Ref types and creation default to synchronous loading.
  * Async refs require their loading marker; synchronous and older refs may omit it.
+ * The API type defaults to unknown when no type argument is provided.
  *
  * @public
  */
 export type ApiRef<
-  T,
+  T = unknown,
   TId extends string = string,
   TLoading extends 'sync' | 'async' = 'sync',
 > = {
@@ -37,6 +38,8 @@ export type ApiRef<
 
 /**
  * Catch-all {@link ApiRef} type.
+ *
+ * @deprecated Use `ApiRef<T, string, 'sync' | 'async'>` instead.
  *
  * @public
  */
@@ -94,14 +97,20 @@ export type ApiHolder = {
  * Async-capable refs allow promises and async dependencies. All dependencies
  * are resolved before the factory is called. Synchronous refs only allow
  * synchronous factories and dependencies. Factory types default to synchronous
- * loading; use {@link AnyApiFactory} to accept both modes.
+ * loading; specify the fourth type parameter to accept both modes.
+ *
+ * @remarks
+ *
+ * Without type arguments, accepts synchronous factories for any API and synchronous
+ * dependencies. When only the API type is provided, the implementation defaults
+ * to that API type.
  *
  * @public
  */
 export type ApiFactory<
-  Api,
-  Impl extends Api,
-  Deps extends { [name in string]: unknown },
+  Api = unknown,
+  Impl extends Api = Api,
+  Deps extends { [name in string]: unknown } = { [name in string]: unknown },
   TLoading extends 'sync' | 'async' = 'sync',
 > = {
   api: ApiRef<Api, string, TLoading>;
@@ -116,6 +125,8 @@ export type ApiFactory<
 
 /**
  * Catch-all {@link ApiFactory} type.
+ *
+ * @deprecated Use {@link ApiFactory} with an explicit loading mode instead.
  *
  * @public
  */

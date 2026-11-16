@@ -13,13 +13,14 @@ for a missing API. Synchronous refs continue returning instances directly.
 
 `ApiRef<T>` remains synchronous by default. Its optional third type parameter
 records the loading mode, while the second parameter remains the ref ID. Use
-`AnyApiRef<T>` to accept either loading mode, including in generic helpers that
-preserve the lookup result type.
+`ApiRef<T, string, 'sync' | 'async'>` to accept either loading mode, including in
+generic helpers that preserve the lookup result type.
 
 Explicitly asynchronous ref types require the `loading: 'async'` marker. Older
 refs without a loading marker remain compatible with synchronous consumers.
 `ApiFactory<Api, Impl, Deps>` and `TypesToApiRefs<Deps>` also remain synchronous
-by default, while `AnyApiFactory` accepts either loading mode.
+by default. Specify the fourth `ApiFactory` type parameter to accept either
+loading mode.
 
 Missing utility API dependencies fail promptly even when a sibling dependency
 is still initializing.

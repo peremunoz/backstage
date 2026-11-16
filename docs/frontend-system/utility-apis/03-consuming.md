@@ -85,17 +85,21 @@ Factory construction in legacy apps remains synchronous.
 the loading mode without branching:
 
 ```ts
-import type { AnyApiRef, ApiHolder } from '@backstage/frontend-plugin-api';
+import type { ApiRef, ApiHolder } from '@backstage/frontend-plugin-api';
 
-function lookup<TApiRef extends AnyApiRef>(apis: ApiHolder, ref: TApiRef) {
+function lookup<TApiRef extends ApiRef<unknown, string, 'sync' | 'async'>>(
+  apis: ApiHolder,
+  ref: TApiRef,
+) {
   return apis.get(ref);
 }
 ```
 
 Refs without a `loading` member in their type are treated as synchronous.
-`ApiRef<T>` also describes a synchronous ref. `AnyApiRef<T>` accepts either
-loading mode, so lookup results for that type include both direct values and
-promises. Awaiting the result handles either mode.
+`ApiRef<T>` also describes a synchronous ref. `ApiRef<T, string, 'sync' | 'async'>`
+accepts either loading mode, so lookup results for that type include both direct
+values and promises. Awaiting the result handles either mode. The deprecated
+`AnyApiRef<T>` alias also continues to accept both modes.
 
 Custom API holders must preserve promise identity across repeated lookups of
 an async-capable ref.

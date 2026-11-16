@@ -29,8 +29,8 @@ import {
 } from './KubernetesFanOutHandler';
 import { KubernetesClientBasedFetcher } from './KubernetesFetcher';
 import { KubernetesConnection } from './KubernetesConnection';
-import { http, HttpResponse } from 'msw';
 import { FetchError } from 'node-fetch';
+import { http, HttpResponse } from 'msw';
 import { setupServer } from 'msw/node';
 import {
   mockServices,
@@ -1254,32 +1254,32 @@ describe('KubernetesFanOutHandler', () => {
             }),
         };
         const logger = mockServices.logger.mock();
+        // Fail the pods request with node-fetch's own error rather than with
+        // msw's HttpResponse.error(), which emits the error on a mocked socket
+        // and occasionally crashes the test as an unhandled error event
         const connection = new KubernetesConnection({ logger });
         const fetchWithConnection =
           connection.fetchWithConnection.bind(connection);
         jest
           .spyOn(connection, 'fetchWithConnection')
-          .mockImplementation(
-            (cluster, credential, resourcePath, labelSelector) => {
-              if (cluster.name === 'fails' && resourcePath === '/api/v1/pods') {
-                return Promise.reject(
-                  new FetchError('Network error', 'system'),
-                );
-              }
-              return fetchWithConnection(
-                cluster,
-                credential,
-                resourcePath,
-                labelSelector,
+          .mockImplementation(async (clusterDetails, credential, ...rest) => {
+            const [resourcePath, labelSelector] = rest;
+            if (
+              clusterDetails.name === 'fails' &&
+              resourcePath === '/api/v1/pods'
+            ) {
+              throw new FetchError(
+                `request to https://fails/api/v1/pods?labelSelector=${encodeURIComponent(
+                  labelSelector ?? '',
+                )} failed, reason: Network error`,
+                'system',
               );
-            },
-          );
+            }
+            return fetchWithConnection(clusterDetails, credential, ...rest);
+          });
         const kubernetesFanOutHandler = new KubernetesFanOutHandler({
           logger,
-          fetcher: new KubernetesClientBasedFetcher({
-            logger,
-            connection,
-          }),
+          fetcher: new KubernetesClientBasedFetcher({ logger, connection }),
           serviceLocator: fleet,
           customResources: [],
           objectTypesToFetch: [
@@ -1336,7 +1336,8 @@ describe('KubernetesFanOutHandler', () => {
               errors: [
                 {
                   errorType: 'FETCH_ERROR',
-                  message: 'Network error',
+                  message:
+                    'request to https://fails/api/v1/pods?labelSelector=backstage.io%2Fkubernetes-id%3Dtest-component failed, reason: Network error',
                 },
               ],
             },

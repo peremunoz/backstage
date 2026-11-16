@@ -1743,9 +1743,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -2947,9 +2947,9 @@ __metadata:
     react-use: "npm:^17.2.4"
     zen-observable: "npm:^0.10.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -3028,15 +3028,13 @@ __metadata:
     "@testing-library/react": "npm:^16.0.0"
     "@testing-library/user-event": "npm:^14.0.0"
     "@types/react": "npm:^18.0.0"
-    "@types/use-sync-external-store": "npm:^1.7.0"
     react: "npm:^18.0.2"
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.6"
-    use-sync-external-store: "npm:^1.7.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.6
   peerDependenciesMeta:
     "@types/react":
@@ -3061,12 +3059,10 @@ __metadata:
     "@testing-library/react": "npm:^16.0.0"
     "@testing-library/user-event": "npm:^14.0.0"
     "@types/react": "npm:^18.0.0"
-    "@types/use-sync-external-store": "npm:^1.7.0"
     react: "npm:^18.0.2"
     react-dom: "npm:^18.0.2"
     react-router: "npm:^7.18.3"
     react-router-dom: "npm:^7.18.3"
-    use-sync-external-store: "npm:^1.7.0"
   peerDependencies:
     "@types/react": ^18.0.0
     react: ^18.0.0
@@ -3097,10 +3093,8 @@ __metadata:
     "@testing-library/react": "npm:^16.0.0"
     "@testing-library/user-event": "npm:^14.0.0"
     "@types/react": "npm:^18.0.0"
-    "@types/use-sync-external-store": "npm:^1.7.0"
     react: "npm:^18.0.2"
     react-dom: "npm:^18.0.2"
-    use-sync-external-store: "npm:^1.7.0"
   peerDependencies:
     "@tanstack/history": ^1.131.2
     "@tanstack/react-router": 1.131.2
@@ -3135,17 +3129,15 @@ __metadata:
     "@testing-library/jest-dom": "npm:^6.0.0"
     "@testing-library/react": "npm:^16.0.0"
     "@types/react": "npm:^18.0.0"
-    "@types/use-sync-external-store": "npm:^1.7.0"
     lodash: "npm:^4.17.21"
     react: "npm:^18.0.2"
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
-    use-sync-external-store: "npm:^1.7.0"
     zod: "npm:^4.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -3178,9 +3170,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -3206,9 +3198,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -3240,9 +3232,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     uri-template: "npm:^2.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -3269,17 +3261,15 @@ __metadata:
     "@testing-library/jest-dom": "npm:^6.0.0"
     "@testing-library/react": "npm:^16.0.0"
     "@types/react": "npm:^18.0.0"
-    "@types/use-sync-external-store": "npm:^1.7.0"
     history: "npm:^5.3.0"
     react: "npm:^18.0.2"
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
-    use-sync-external-store: "npm:^1.7.0"
     zod: "npm:^4.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2 || ^7.18.3
   peerDependenciesMeta:
     "@types/react":
@@ -3308,7 +3298,6 @@ __metadata:
     "@testing-library/jest-dom": "npm:^6.0.0"
     "@types/jest": "npm:*"
     "@types/react": "npm:^18.0.0"
-    "@types/use-sync-external-store": "npm:^1.7.0"
     "@types/zen-observable": "npm:^0.8.0"
     i18next: "npm:^22.4.15"
     lodash: "npm:^4.17.21"
@@ -3317,16 +3306,15 @@ __metadata:
     react: "npm:^18.0.2"
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
-    use-sync-external-store: "npm:^1.7.0"
     zen-observable: "npm:^0.10.0"
     zod: "npm:^3.25.76 || ^4.0.0"
   peerDependencies:
     "@testing-library/dom": ^10.0.0
     "@testing-library/react": ^16.0.0
     "@types/jest": "*"
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/jest":
@@ -3360,23 +3348,23 @@ __metadata:
   dependencies:
     "@backstage/cli": "workspace:^"
     "@backstage/config": "workspace:^"
-    "@backstage/core-components": "workspace:^"
     "@backstage/core-plugin-api": "workspace:^"
     "@backstage/dev-utils": "workspace:^"
     "@backstage/integration": "workspace:^"
     "@backstage/test-utils": "workspace:^"
-    "@material-ui/core": "npm:^4.12.2"
-    "@material-ui/icons": "npm:^4.9.1"
+    "@backstage/ui": "workspace:^"
+    "@remixicon/react": "npm:>=4.6.0 <4.9.0"
     "@testing-library/dom": "npm:^10.0.0"
     "@testing-library/jest-dom": "npm:^6.0.0"
+    "@testing-library/react": "npm:^16.0.0"
     "@types/react": "npm:^18.0.0"
     react: "npm:^18.0.2"
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -3426,9 +3414,9 @@ __metadata:
     "@material-ui/core": ^4.12.2
     "@material-ui/styles": ^4.10.0
     "@mui/material": ^5.12.2
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router: ^6.30.2
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
@@ -3449,9 +3437,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -3500,9 +3488,9 @@ __metadata:
     swagger-ui-react: "npm:^5.27.1"
     zod: "npm:^4.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -3583,9 +3571,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     zod: "npm:^4.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -3610,9 +3598,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -3652,7 +3640,6 @@ __metadata:
     "@testing-library/react": "npm:^16.0.0"
     "@testing-library/user-event": "npm:^14.0.0"
     "@types/react": "npm:^18.0.0"
-    "@types/use-sync-external-store": "npm:^1.7.0"
     i18next: "npm:^22.4.15"
     lodash: "npm:^4.17.21"
     motion: "npm:^12.0.0"
@@ -3664,13 +3651,12 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     react-stately: "npm:~3.51.0"
     react-use: "npm:^17.2.4"
-    use-sync-external-store: "npm:^1.7.0"
     zen-observable: "npm:^0.10.0"
     zod: "npm:^4.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -4182,9 +4168,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -4215,9 +4201,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     react-use: "npm:^17.2.4"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -4764,9 +4750,9 @@ __metadata:
     react-use: "npm:^17.2.4"
     zod: "npm:^4.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -4817,9 +4803,9 @@ __metadata:
     react-use: "npm:^17.2.4"
     yaml: "npm:^2.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -4905,9 +4891,9 @@ __metadata:
     zod: "npm:^4.0.0"
   peerDependencies:
     "@backstage/frontend-test-utils": "workspace:^"
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@backstage/frontend-test-utils":
@@ -4957,9 +4943,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     react-use: "npm:^17.2.4"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -5008,7 +4994,6 @@ __metadata:
     "@testing-library/user-event": "npm:^14.0.0"
     "@types/pluralize": "npm:^0.0.33"
     "@types/react": "npm:^18.0.0"
-    "@types/use-sync-external-store": "npm:^1.0.0"
     classnames: "npm:^2.3.1"
     csv-stringify: "npm:^5.6.5"
     dataloader: "npm:^2.0.0"
@@ -5020,13 +5005,12 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     react-use: "npm:^17.2.4"
     swr: "npm:^2.2.5"
-    use-sync-external-store: "npm:^1.4.0"
     zen-observable: "npm:^0.10.0"
     zod: "npm:^4.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -5058,9 +5042,9 @@ __metadata:
     react-use: "npm:^17.2.4"
     zen-observable: "npm:^0.10.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -5165,9 +5149,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -5206,9 +5190,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     react-use: "npm:^17.2.4"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -5445,9 +5429,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -5499,9 +5483,9 @@ __metadata:
     react-use: "npm:^17.2.4"
     zod: "npm:^3.25.76 || ^4.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -5581,9 +5565,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     react-use: "npm:^17.2.4"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -5665,9 +5649,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     react-use: "npm:^17.4.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -5699,9 +5683,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -5755,9 +5739,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -5902,9 +5886,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     react-use: "npm:^17.2.4"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -5937,9 +5921,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     react-use: "npm:^17.2.4"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -5987,9 +5971,9 @@ __metadata:
     react-use: "npm:^17.2.4"
     zod: "npm:^4.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -6092,9 +6076,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     swr: "npm:^2.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
@@ -6503,9 +6487,9 @@ __metadata:
     winston: "npm:^3.2.1"
     winston-transport: "npm:^4.7.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -6612,9 +6596,9 @@ __metadata:
     zod-to-json-schema: "npm:^3.25.1"
   peerDependencies:
     "@backstage/frontend-test-utils": "workspace:^"
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router: ^6.30.3
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
@@ -6701,9 +6685,9 @@ __metadata:
     zod: "npm:^3.25.76 || ^4.0.0"
     zod-to-json-schema: "npm:^3.25.1"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -6909,9 +6893,9 @@ __metadata:
     react-use: "npm:^17.3.2"
     zod: "npm:^4.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -6954,9 +6938,9 @@ __metadata:
     react-use: "npm:^17.2.4"
     zod: "npm:^4.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -7018,9 +7002,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -7053,9 +7037,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     wait-for-expect: "npm:^4.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -7087,9 +7071,9 @@ __metadata:
   peerDependencies:
     "@testing-library/dom": ^10.0.0
     "@testing-library/react": ^16.0.0
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -7180,9 +7164,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     shadow-dom-testing-library: "npm:^1.13.1"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -7261,9 +7245,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     react-use: "npm:^17.2.4"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -7321,9 +7305,9 @@ __metadata:
     react-use: "npm:^17.2.4"
     zod: "npm:^4.0.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -7400,9 +7384,9 @@ __metadata:
     react-use: "npm:^17.2.4"
     zen-observable: "npm:^0.10.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -7520,9 +7504,9 @@ __metadata:
     "@testing-library/dom": ^10.0.0
     "@testing-library/react": ^16.0.0
     "@types/jest": "*"
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/jest":
@@ -7550,9 +7534,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
     "@material-ui/core": ^4.12.2
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -7590,7 +7574,6 @@ __metadata:
     "@testing-library/user-event": "npm:^14.0.0"
     "@types/react": "npm:^18.0.0"
     "@types/react-dom": "npm:^18.0.0"
-    "@types/use-sync-external-store": "npm:^1.0.0"
     clsx: "npm:^2.1.1"
     eslint-plugin-storybook: "npm:^10.4.0"
     glob: "npm:^14.0.0"
@@ -7603,7 +7586,6 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     react-stately: "npm:~3.51.0"
     storybook: "npm:^10.4.0"
-    use-sync-external-store: "npm:^1.4.0"
   peerDependencies:
     "@types/react": ^18.0.0
     react: ^18.0.0
@@ -7627,9 +7609,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -8195,9 +8177,9 @@ __metadata:
   linkType: hard
 
 "@electric-sql/pglite@npm:^0.5.8":
-  version: 0.5.15
-  resolution: "@electric-sql/pglite@npm:0.5.15"
-  checksum: 10/5e9e67f807b7ff2d21023ae9e62d62ee2aa2dc64151982bace8d48ecb39e527e5796238ec11835041f108a3f19676e2ce993e2fc002db9b5385231369ef0724b
+  version: 0.5.16
+  resolution: "@electric-sql/pglite@npm:0.5.16"
+  checksum: 10/8f6769ba9619b305a3cf19efc7fe91ad26c7862afc7ff89d2e579798051f78e382ea49fb1e1a28c7f08a59cdf9b4cd379ab8ff5281c90bea8846cce2e8b88cce
   languageName: node
   linkType: hard
 
@@ -9510,11 +9492,11 @@ __metadata:
   linkType: hard
 
 "@hono/node-server@npm:^1.19.9 || ^2.0.5":
-  version: 2.1.5
-  resolution: "@hono/node-server@npm:2.1.5"
+  version: 2.1.8
+  resolution: "@hono/node-server@npm:2.1.8"
   peerDependencies:
     hono: ^4 || ^5.0.0-0
-  checksum: 10/4b6f21fe37f956a61856b6f517f91543962f32466a88477d362e8cff77272e541ea6388b8026275e1a2a1976d098c9bf4c3e1d8f8087505e8eac777f0f872901
+  checksum: 10/78b2b83352bd79880c5bc58bdcec3309037463ea637ac069399d255693752e7178cc1844981f07b25ef149384b5b089d6786ea0c89da36767958894ffe5a2d79
   languageName: node
   linkType: hard
 
@@ -9971,14 +9953,12 @@ __metadata:
     "@testing-library/jest-dom": "npm:^6.0.0"
     "@testing-library/react": "npm:^16.0.0"
     "@types/react": "npm:^18.0.0"
-    "@types/use-sync-external-store": "npm:^1.7.0"
     react: "npm:^18.0.2"
     react-dom: "npm:^18.0.2"
-    use-sync-external-store: "npm:^1.7.0"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
@@ -10040,9 +10020,9 @@ __metadata:
     react-router-dom: "npm:^6.30.2"
     react-use: "npm:^17.2.4"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -20203,7 +20183,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/use-sync-external-store@npm:^1.0.0, @types/use-sync-external-store@npm:^1.7.0":
+"@types/use-sync-external-store@npm:^1.7.0":
   version: 1.7.0
   resolution: "@types/use-sync-external-store@npm:1.7.0"
   checksum: 10/0085883064c1526c5e06a5ec4d259d88a9e15a615888eb22fb496285e6bbdc4077fdc47acd6f17c3f2f7803d3911faefbd317f34ed38de5a5867a2488e7c80e5
@@ -22219,9 +22199,9 @@ __metadata:
     react-dom: "npm:^18.0.2"
     react-router-dom: "npm:^6.30.2"
   peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     react-router-dom: ^6.30.2
   peerDependenciesMeta:
     "@types/react":
@@ -28018,14 +27998,14 @@ __metadata:
   linkType: hard
 
 "express-rate-limit@npm:^8.2.1, express-rate-limit@npm:^8.2.2":
-  version: 8.7.3
-  resolution: "express-rate-limit@npm:8.7.3"
+  version: 8.7.4
+  resolution: "express-rate-limit@npm:8.7.4"
   dependencies:
     debug: "npm:^4.4.3"
     ip-address: "npm:^10.2.0"
   peerDependencies:
     express: ">= 4.11"
-  checksum: 10/a92c767dfa5fb86bb68cf789d0c789c429c8fc273d27218e9fff498049cdc7138b7d07fa29ac9185dc8f50fe320dfa51bbe461d9c5b8e9cf823e783b5787c3aa
+  checksum: 10/82b20bddaa5dd1860d44f75ce15209e56a44be7568f3f79fc059b5c35ff888ba79d278642f0f9de78fa09f10505163712e7072ee210363c8d656157728774ab7
   languageName: node
   linkType: hard
 
@@ -29533,13 +29513,13 @@ __metadata:
   linkType: hard
 
 "glob@npm:^14.0.0":
-  version: 14.0.4
-  resolution: "glob@npm:14.0.4"
+  version: 14.0.6
+  resolution: "glob@npm:14.0.6"
   dependencies:
     minimatch: "npm:^11.0.5"
     minipass: "npm:^7.1.3"
     path-scurry: "npm:^3.0.0"
-  checksum: 10/d43e532cc85bd2e26bc3a0064a809ed57f2581999fb0bf2b6bafe7d394358fac2693331c313d6eccc9952e0f2bfdd78f53c88ad06a657dc47c6bc99745e470e2
+  checksum: 10/6674454c61d4146ce33c9bfa7980273c16f14893538805ca4c38ca4de7fc1823f01ea4db10da8db4e2d18391fa58c9ad6b72b59b0598ac60b8bce746429e84ea
   languageName: node
   linkType: hard
 
@@ -32045,8 +32025,8 @@ __metadata:
   linkType: hard
 
 "isomorphic-git@npm:^1.23.0":
-  version: 1.44.11
-  resolution: "isomorphic-git@npm:1.44.11"
+  version: 1.44.14
+  resolution: "isomorphic-git@npm:1.44.14"
   dependencies:
     async-lock: "npm:^1.4.1"
     clean-git-ref: "npm:^2.0.1"
@@ -32060,7 +32040,7 @@ __metadata:
     simple-get: "npm:^4.0.1"
   bin:
     isogit: cli.cjs
-  checksum: 10/30d8b7446849774911f0b190e7099ddf790d95c915298449f3ca72573273d7e032b0b17a5e96755cd5fd4b417a19b124e92529da3864e70121a67d031db02649
+  checksum: 10/4bde764cc5e20253505c443ebc4a5bc6019abf3959f286298423cc009ae02cb19424647f51dead7f1fff0ad0c74af42c5115a81c64dc1a9d110f53f774c91655
   languageName: node
   linkType: hard
 
@@ -32773,9 +32753,9 @@ __metadata:
   linkType: hard
 
 "jose@npm:^6.0.10, jose@npm:^6.1.0, jose@npm:^6.1.3":
-  version: 6.2.15
-  resolution: "jose@npm:6.2.15"
-  checksum: 10/57ea834a3aae6612b603dc04e5e068dabf1582934ffc759f004a0c654632bec06e6184aee73246157d03fb56179d50ac4e5c56ad02cf939086ef888ae8d8ebec
+  version: 6.2.17
+  resolution: "jose@npm:6.2.17"
+  checksum: 10/df6ae5da42e71a4c3bd1483534c5579ed32f5806ec362ea472f309e8e57aef42afa1dbac62289596975d3587f7ac38deefe4313e1434ce76972ea0f029070bc9
   languageName: node
   linkType: hard
 
@@ -42540,8 +42520,8 @@ __metadata:
   linkType: hard
 
 "snyk-nodejs-lockfile-parser@npm:^2.0.0":
-  version: 2.10.6
-  resolution: "snyk-nodejs-lockfile-parser@npm:2.10.6"
+  version: 2.10.7
+  resolution: "snyk-nodejs-lockfile-parser@npm:2.10.7"
   dependencies:
     "@snyk/dep-graph": "npm:^2.12.0"
     "@snyk/error-catalog-nodejs-public": "npm:^5.82.1"
@@ -42563,7 +42543,7 @@ __metadata:
     uuid: "npm:^11.1.1"
   bin:
     parse-nodejs-lockfile: bin/index.js
-  checksum: 10/78e745a142c4d42a8428455dac986c4d207d5c29ae37bb397975cef6c34b6d62fade672adeb72903352c4cf39d797bfe554a44ced85de0061bb0d8ecaf4b35c2
+  checksum: 10/af7c5bcd5b8acc46e51df4d538adddffb5a98de359a8fe322d4e6396bf060d0b196d9dc16a6ef194ceacee349dc066acde0817c7ec19b5d7496389663d5d44be
   languageName: node
   linkType: hard
 
